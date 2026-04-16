@@ -22,38 +22,82 @@
 </head>
 <body>
   <div id="frase"></div>
-    <script>
-      const frases = [
-          "Estoy contento de aprender programación",
-          "Python me parece el lenguaje de programación más intuitivo y sencillo hasta ahora.",
-          "Mi curso Saúca nos ha ayudado mucho tanto en la fase online como en la presencial",
-          "Han mejorado mucho los conocimientos de Python respecto a la fase online",
-          "Estoy muy a gusto con todos mis compañeros.",
-          "La asignatura tiene una extensión inconmensurable",
-          "La asignatura es supuerútil",
-          "Habría que dedicar un año entero a esta asignatura",
-          "La asignatura es muy chula, y más si te gusta",
-          "Es un gran desafío sobre todo matemáticamente.",
-          "Estudiar esta asignatura mejora la lógica",
-          "Despúes de Python no quiero hacer java",
-          "Mundo a parte somos personas medio mortales ya",
-          "Por el examen no os preocupeis",
-          "Tope de gama",
-          "Con 3,5 aprobais",
-          "¿Habeis llegado?",
-          "¿A qué hora un Valorant?"
-      ];
-  
-      const frase = document.getElementById("frase");
-  
-      function fraseAleatoria() {
-        const indice = Math.floor(Math.random() * frases.length);
-        frase.textContent = frases[indice];
-      }
-  
-      fraseAleatoria();
-      // Cambiar la frase cada 10 segundos
-      setInterval(fraseAleatoria, 10000);
-    </script>
+
+  <script>
+    const frases = [
+        "Estoy contento de aprender programación",
+        "Python me parece el lenguaje de programación más intuitivo y sencillo hasta ahora.",
+        "Mi curso Saúca nos ha ayudado mucho tanto en la fase online como en la presencial",
+        "Han mejorado mucho los conocimientos de Python respecto a la fase online",
+        "Estoy muy a gusto con todos mis compañeros.",
+        "La asignatura tiene una extensión inconmensurable",
+        "La asignatura es supuerútil",
+        "Habría que dedicar un año entero a esta asignatura",
+        "Hay que leer despacito",
+        "Podría jubilarme y dedicarme a programar por hobby",
+        "La asignatura es muy chula, y más si te gusta",
+        "Es un gran desafío sobre todo matemáticamente.",
+        "Estudiar esta asignatura mejora la lógica",
+        "Despúes de Python no quiero hacer java",
+        "Mundo a parte somos personas medio mortales ya",
+        "Por el examen no os preocupeis",
+        "Tope de gama",
+        "Con 3,5 aprobais",
+        "¿Habeis llegado?",
+        "¿A qué hora un Valorant?",
+        "El curso debe ser siempre presencial",
+        "El curso es muy productivo",
+        "El IRE podría ser al 100%...",
+        "El horario debe ser más flexible.... entrada a las 08:30 aprox.",
+        "La asignatura de Python debe ser de un año",
+        "Yo me llamo Ralph",
+        "Corre plátano!",
+        "El aliento de mi gato huele a comida de gato",
+        "La profesora Krabappel y el director estaban en un armario haciendo bebés, yo vi a uno de los bebés, y uno de los bebés se quedo mirándome",
+        "¡Socorro, está tocando mi zona especial!",
+        "Python mola",
+        "Python No mola",
+        "Python termina hoy",
+        "Python es un mundo",
+        "Python entretiene",
+        "Muchas gracias por lo aprendido durante este curso.",
+        "Esperemos que Java sea mas sencillo.",
+        "Tope Gama, Brother.",
+        "Domino mas Python que Valorant.",
+        "Esta asignatura implica al menos un año de estudio.",
+        "Penes negros, Pollas negras es capa 8",
+        "Y nos fuimos pa MADRID",
+        "Con IA todo es más fácil",
+        "Los miercoles jueves son los nuevos viernes...",
+        "El árbol no os deja ver el bosque",
+        "LA ASIGNATURA ME PARECE MUY INTERESANTE",
+        "HEMOS APRENDIDO MUCHAS COSAS",
+        "PXXXXX NEGRAS",
+        "FORENHOURS",
+        "NO HAGÁIS PREGUNTITAS A PARTIR DE LAS 13.15",
+        "Con 3,5 aprobáis, dijo una vez alguien llamado Victor...",
+        "La asignatura es muy chula, dijo una IA...",
+        "He llegado temprano, dijo una vez alguien...",
+        "A mitad de curso...desaprendí...",
+        "Lo mejor del desayuno son los sandwiches de mi compi de la derecha...",
+        "Esto es algo que se sale de madre", "Voy a fumar un piti",
+        "Esta asignatura mata",
+        "Todo es cuestión de acostumbrarse",
+        "¿Dónde comemos hoy?"
+    ];
+
+    const elementoFrase = document.getElementById("frase");
+
+    function mostrarFraseAleatoria() {
+      const indice = Math.floor(Math.random() * frases.length);
+      elementoFrase.textContent = frases[indice];
+    }
+
+    // Mostrar una frase al cargar la página
+    mostrarFraseAleatoria();
+
+    // Cambiar la frase cada 10 segundos
+    setInterval(mostrarFraseAleatoria, 10000);
+  </script>
 </body>
 </html>
