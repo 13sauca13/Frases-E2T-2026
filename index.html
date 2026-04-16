@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Frases E2T 2026</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      background: #f5f5f5;
+    }
+    #frase {
+      font-size: 2rem;
+      max-width: 70%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="frase"></div>
+    <script>
+      const frases = [
+          "Estoy contento de aprender programación",
+          "Python me parece el lenguaje de programación más intuitivo y sencillo hasta ahora.",
+          "Mi curso Saúca nos ha ayudado mucho tanto en la fase online como en la presencial",
+          "Han mejorado mucho los conocimientos de Python respecto a la fase online",
+          "Estoy muy a gusto con todos mis compañeros.",
+          "La asignatura tiene una extensión inconmensurable",
+          "La asignatura es supuerútil",
+          "Habría que dedicar un año entero a esta asignatura",
+          "La asignatura es muy chula, y más si te gusta",
+          "Es un gran desafío sobre todo matemáticamente.",
+          "Estudiar esta asignatura mejora la lógica",
+          "Despúes de Python no quiero hacer java",
+          "Mundo a parte somos personas medio mortales ya",
+          "Por el examen no os preocupeis",
+          "Tope de gama",
+          "Con 3,5 aprobais",
+          "¿Habeis llegado?",
+          "¿A qué hora un Valorant?"
+      ];
+  
+      const frase = document.getElementById("frase");
+  
+      function fraseAleatoria() {
+        const indice = Math.floor(Math.random() * frases.length);
+        frase.textContent = frases[indice];
+      }
+  
+      mostrarFraseAleatoria();
+      // Cambiar la frase cada 10 segundos
+      setInterval(fraseAleatoria, 10000);
+    </script>
+  </div>
+</body>
+</html>
